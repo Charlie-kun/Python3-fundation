@@ -1,0 +1,22 @@
+# Find Greatest common factor
+# Input a, b
+# Print for a and b Greatest common factor
+
+def gcd(a,b):
+  i=min(a,b)    # find min value for a and b
+  while True:
+    if a%i==0 and b%i==0:
+      return i
+    i=i-1    # Decrease i for 1 
+
+print(gcd(60,24)) #12
+
+# Using Euclid
+
+def gcdu(a,b):
+  if b==0:     # Termination condition
+    return a
+  return gcdu(b,a%b);
+
+print(gcdu(60,24))
+print(gcdu(24,60))
