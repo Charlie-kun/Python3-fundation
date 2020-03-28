@@ -68,4 +68,6 @@ print(re.__name__)    #re
 
 import os
 print(os.__name__)    #os
+
+import module_test      #do nothing
 '''
