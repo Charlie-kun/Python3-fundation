@@ -71,3 +71,22 @@ print(os.__name__)    #os
 
 import module_test      #do nothing
 '''
+
+
+#Package
+import Speech    #sys.path reference.
+
+def train():
+  print("Train")
+  pass
+
+def loadModel():
+  print("LoadModel")
+  pass
+
+def saveModel():
+  print("SaveModel")
+  pass
+
+from Speech.Reconition import HMM
+import Speech.Reconition.HMM
