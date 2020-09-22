@@ -15,7 +15,7 @@ They are not have fake coin(same weight) : display "0"
 def weigh(a,b,c,d):
     fake=29    #Positions for fake coin(Algorithm must be used weight method, about find this position.)
     if a <= fake and fake <=b:
-        return -1
+        return -1       #result return
     if c <= fake and fake <=d:
         return 1
     return 0
