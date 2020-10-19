@@ -53,3 +53,36 @@ def sphereVolume():
     return v
 
 print(sphereVolume())
+
+def add(x,y):
+    return x+y
+
+def sub(x,y):
+    return x-y
+
+def mul(x,y):
+    return x*y
+
+def div(x,y):
+    return x/y
+
+print(mul(30,add(10,20)))
+
+def sub(x,y):
+    global s
+
+    x,y=y,x
+    z="사과"
+    s="바나나"
+    print(z,s,x,y)
+
+z,s,x,y=1,2,3,4
+sub(7,8)
+print(z,s,x,y)
+
+def pimath():
+    r=int(input("input radius : "))
+    print("원의 면적 : ", r**2*math.pi)
+    print("원의 둘레 : ", 2*r*math.pi)
+
+pimath()
