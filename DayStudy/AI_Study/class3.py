@@ -69,3 +69,35 @@ if credits>=140 and gpa>=2.0:
     print("Possible to graduate!")
 else :
     print("Impossible to graduate!")
+
+appleQuality=input("Input apple's quality : ")
+applePrice=int(input("Input an apple price : "))
+if appleQuality =="Good":
+    if applePrice<1000:
+        print("Buy 10 apples.")
+    else:
+        print("Buy 5 apples.")
+else:
+    print("Don't buy appeles.")
+
+for x in[0,1,2,3,4,5,6,7,8,9]:
+    print(x, end=" ")
+
+
+sum=0
+for x in range(10):
+    sum=sum+x
+print(sum)
+
+import math
+import turtle
+
+t= turtle.Turtle()
+
+t.pendown()
+for angle in range(360):
+    y=math.sin(math.radians(angle))
+    scaledX=angle
+    scaledY=y*100
+    t.goto(scaledX, scaledY)
+t.penup()
