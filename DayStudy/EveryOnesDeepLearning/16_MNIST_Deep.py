@@ -38,7 +38,7 @@ if not os.path.exists(MODEL_DIR):
   os.mkdir(MODEL_DIR)
 
 
-modelpath="./model/{epoch:02d|-{val_loss:.4f}.hdf5"
+modelpath="./model/{epoch:02d}-{val_loss:.4f}.hdf5"
 checkpointer=ModelCheckpoint(filepath=modelpath, monitor='val_loss', verbose=1, save_best_only=True)
 early_stopping_callback=EarlyStopping(monitor='val_loss', patience=10)
 
