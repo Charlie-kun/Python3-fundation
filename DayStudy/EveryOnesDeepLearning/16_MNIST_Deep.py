@@ -52,8 +52,8 @@ y_vloss=history.history['val_loss']
 y_loss=history.history['loss']
 
 x_len=numpy.arange(len(y_loss))
-plt.plot(x_len, y_vloss, maker='.', c="red", label='Testset_loss')
-plt.plot(x_len, y_loss, maker='.', c="blue", label='Trainset_loss')
+plt.plot(x_len, y_vloss, marker='.', c="red", label='Testset_loss')
+plt.plot(x_len, y_loss, marker='.', c="blue", label='Trainset_loss')
 
 plt.legend(loc='upper right')
 plt.grid()
