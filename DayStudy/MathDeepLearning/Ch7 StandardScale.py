@@ -1,11 +1,11 @@
-from skelearn import datasets
-from skelearn.preprocessing import StandardScaler
-from skelearn.neighbers import KNeighborsClassifier
-from skelearn.model_selection import train_test_split
+from sklearn import datasets
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
 
-from skelearn.metrics import accuracy_score
-from skelearn.metrics import confusion_matrix
-from skelearn.metrics import classification_report
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 
 #Flower data load
 raw_iris=datasets.load_iris()
