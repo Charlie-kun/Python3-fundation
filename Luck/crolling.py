@@ -53,6 +53,6 @@ def getLottoWinInfo(minDrwNo, maxDrwNo):
 
 #### pd.read_csv("lotto_win_info.csv")
 
-lotto_df = getLottoWinInfo(923, 961)    #회차 크롤링
+lotto_df = getLottoWinInfo(923, 961)    #some times didn't working
 
 lotto_df.to_csv("lotto.csv", index=False)
